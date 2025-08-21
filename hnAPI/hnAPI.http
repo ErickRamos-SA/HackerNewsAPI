@@ -1,0 +1,11 @@
+@hnAPI_HostAddress = http://localhost:5054
+
+GET {{hnAPI_HostAddress}}/tecnologynews?n=10
+Accept: application/json
+
+###
+
+###
+Accept: application/json
+
+###
