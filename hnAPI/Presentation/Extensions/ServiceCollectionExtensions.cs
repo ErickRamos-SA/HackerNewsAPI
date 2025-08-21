@@ -6,6 +6,12 @@ namespace hnAPI.Presentation.Extensions
 {
     public static class ServiceCollectionExtensions
     {
+        /// <summary>
+        /// Registra los servicios relacionados con las historias de Hacker News.
+        /// </summary>
+        /// <param name="services">Colección de servicios donde se registrarán los servicios.</param>
+        /// <param name="configuration">Configuración de la aplicación.</param>
+        /// <returns>La colección de servicios.</returns>
         public static IServiceCollection AddStoryServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.Configure<StoryApiOptions>(configuration.GetSection("StoryApi"));
